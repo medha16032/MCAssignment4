@@ -1,0 +1,91 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.medhagupta.todolist.EditItem">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter new title:"
+        android:textSize="20sp"
+        android:textColor="#e73a5e"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_marginTop="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/editTextUpdatedTitle"
+        android:layout_alignStart="@+id/editTextUpdatedTitle"
+        android:layout_below="@+id/toolbar"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUpdatedTitle"
+        android:layout_marginTop="10dp"
+        android:ems="13"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/textViewDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter new details:"
+        android:textSize="20sp"
+        android:textColor="#e73a5e"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/editTextUpdatedTitle"
+        android:layout_alignLeft="@+id/editTextUpdatedTitle"
+        android:layout_alignStart="@+id/editTextUpdatedTitle"
+        android:layout_marginTop="91dp" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUpdatedDetails"
+        android:layout_marginTop="10dp"
+        android:ems="13"
+        android:layout_below="@+id/textViewDetails"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/buttonSubmit"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FF4081"
+        android:padding="8dp"
+        android:textColor="#FFF3E0"
+        android:textSize="20sp"
+        android:layout_below="@+id/editTextUpdatedDetails"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>
+    </ScrollView>
